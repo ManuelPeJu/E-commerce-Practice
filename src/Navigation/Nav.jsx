@@ -1,7 +1,7 @@
 import React from 'react'
 import './Nav.css'
 import {FiHeart} from "react-icons/fi"
-import {AiPOutlineShippingCart, AiOutlineUserAdd, AiOutlineShoppingCart} from "react-icons/ai"
+import {AiOutlineUserAdd, AiOutlineShoppingCart} from "react-icons/ai"
 const Nav = () => {
   return (
     <nav>
@@ -9,14 +9,14 @@ const Nav = () => {
         <input type='text' className='search-input' placeholder='Enter your search shoes.' />
       </div>
       <div className="profile-container">
-        <a href="">
+        <a href="#">
           <FiHeart className='nav-icons' />
           
         </a>
-        <a href="">
+        <a href="#">
             <AiOutlineShoppingCart className='nav-icons' />
         </a>
-        <a href="">
+        <a href="#">
             <AiOutlineUserAdd className='nav-icons' />
         </a>
         
