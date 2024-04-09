@@ -26,7 +26,7 @@ function App() {
 
   // Radio Filter
   const handleChange = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     setSelectedCategory(e.target.value);
   }
 
