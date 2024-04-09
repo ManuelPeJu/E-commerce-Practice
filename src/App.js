@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./index.css";
 import Navitagion from "./Navigation/Nav";
 import Products from "./Products/Products";
 import Recommended from "./Recommended/Recommended";
@@ -16,13 +17,12 @@ function App() {
   const [query, setQuery] = useState("");
 
   const handleInputChange = (e) => {
-    e.preventDefault();
     setQuery(e.target.value);
   }
 
-  const filteredItems = products.filter((product) => {
-    product.title.toLowerCase().includes(query.toLowerCase())
-  })
+  const filteredItems = products.filter(
+    (product) => product.title.toLowerCase().includes(query.toLowerCase())
+  );
 
   // Radio Filter
   const handleChange = (e) => {
@@ -37,7 +37,7 @@ function App() {
   const filteredData = (products, selected, query) => {
     let filteredProducts = products;
     if(query) {
-      filteredProducts = products
+      filteredProducts = filteredItems
     }
     if(selected) {
       filteredProducts = filteredProducts.filter(({category, color, company, newPrice, title}) => 
