@@ -74,7 +74,7 @@ function App() {
 
   return (
       <>
-        <Sidebar />
+        <Sidebar handleChange={handleChange}/>
         <Navitagion />
         <Recommended />
         <Products />
