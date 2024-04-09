@@ -2,7 +2,6 @@ import React from 'react'
 import "./Products.css"
 import { AiFillStar } from 'react-icons/ai'
 import { BsFillBagHeartFill } from 'react-icons/bs'
-import data from '../db/data'
 const Products = () => {
   return (
     <>
