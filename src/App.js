@@ -6,8 +6,8 @@ function App() {
   return (
       <>
         <Navitagion />
-        <Products />
         <Recommended />
+        <Products />
       </>
   );
 }
