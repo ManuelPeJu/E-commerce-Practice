@@ -26,13 +26,11 @@ function App() {
 
   // Radio Filter
   const handleChange = (e) => {
-    // e.preventDefault();
     setSelectedCategory(e.target.value);
   }
 
   // Buttons Filter
   const handleClick = (e) => {
-    e.preventDefault();
     setSelectedCategory(e.target.value);
   }
 
