@@ -9,10 +9,18 @@
     align-items: center;
 }
 
+.sidebar-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sidebar-title {
     font-size: 22px;
     font-weight: normal;
     margin-bottom: 20px;
+    right: inherit; 
+
 }
 
 
@@ -23,6 +31,8 @@
 
 .logo-container h1 {
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    
 }
 
 
@@ -43,6 +53,14 @@
     .logo-container {
         display: none;
     }
+
+    .sidebar-options {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex: 1;
+    }
 }
 
 
@@ -60,7 +78,16 @@
         justify-content: space-evenly;
     }
 
+    .sidebar-options {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex: 1;
+    }
+
     .logo-container {
         display: none;
     }
+
 }
