@@ -1,5 +1,11 @@
 .card-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem;
     flex-wrap: wrap;
     margin-left: 20rem;
     margin-top: 2rem;
@@ -7,7 +13,12 @@
 }
 
 .card {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
     border: 2px solid #ededed;
     padding: 20px;
     cursor: pointer;
@@ -47,5 +58,50 @@
 
 .bag-icon {
     color: #535353;
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .card-container {
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 15rem;
+        height: 15rem;
+
+    }
+    .card-img {
+        width: 10rem;
+
+    }
+    .card-title {
+        margin-bottom: 0.5rem;
+
+    }
+    .card-price {
+        margin-bottom: 0.5rem;
+
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
     
 }
