@@ -20,8 +20,15 @@
     width: 20rem;
     height: 20rem;
     border: 2px solid #ededed;
-    padding: 20px;
+    border-radius: 5px;
+    padding: 1rem;
     cursor: pointer;
+}
+
+.card:hover {
+    border: 2px solid #e6ae40;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .card-img {
@@ -98,7 +105,7 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media  screen and (max-width: 500px) {
     .card-container {
         grid-template-columns: repeat(1, 1fr);
         
