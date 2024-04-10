@@ -68,11 +68,32 @@
     
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
     .card-container {
         grid-template-columns: repeat(2, 1fr);
-        
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin-left: 0;
     }
+
+    .card {
+        width: 18rem;
+        height: 18rem;
+
+    }
+    .card-img {
+        width: 10rem;
+
+    }
+    .card-title {
+        margin-bottom: 0.5rem;
+
+    }
+    .card-price {
+        margin-bottom: 0.5rem;
+    }
+
 }
 
 
@@ -84,8 +105,8 @@
     }
 
     .card {
-        width: 15rem;
-        height: 15rem;
+        width: 18rem;
+        height: 18rem;
 
     }
     .card-img {
@@ -105,7 +126,7 @@
 }
 
 
-@media  screen and (max-width: 500px) {
+@media  screen and (max-width: 600px) {
     .card-container {
         grid-template-columns: repeat(1, 1fr);
         
